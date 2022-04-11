@@ -3,3 +3,6 @@ print(message)
 
 message = "Welcome to Vietnam"
 print(message)
+
+message = 'I told my friend "I\'m Vietnamese"'
+print(message)
