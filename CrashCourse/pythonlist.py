@@ -3,10 +3,10 @@
 myList = ["tao", "nho", "le", "man"]
 print(myList)
 
-thislist = ["apple", "banana", "cherry", "apple", "cherry"]
-print(thislist)
+thisList = ["apple", "banana", "cherry", "apple", "cherry"]
+print(thisList)
 
-print(len(thislist))
+print(len(thisList))
 print(len(myList))
 
 list1 = ["abc", 34, True, 40, "male"]
@@ -17,18 +17,60 @@ print(type(list1))
 listconstructor = list(("Apple", "Samsung", "Huawei"))
 print(listconstructor)
 
-thislist = ["apple", "banana", "cherry"]
-print(thislist[-2])
+thisList = ["apple", "banana", "cherry"]
+print(thisList[-2])
 
 # Range of Indexes
-thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
-print(thislist[2:5])  # hiển thị từ index số 2 cho tới index 5-1 tức là 4. Nó sẽ không chứa index 5.
+thisList = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thisList[2:5])  # hiển thị từ index số 2 cho tới index 5-1 tức là 4. Nó sẽ không chứa index 5.
 
-print(thislist[1:])  # hiển thị từ index số 1 cho tới hết mảng.
-print(thislist[:thislist.index("apple")])
-print(thislist[-4:-1])
-print(thislist[3:6])
+print(thisList[1:])  # hiển thị từ index số 1 cho tới hết mảng.
+print(thisList[:thisList.index("apple")])
+print(thisList[-4:-1])
+print(thisList[3:6])
 
 # Check if item exits.
-if "apple" in thislist:
+if "apple" in thisList:
     print("Yes, 'apple' is in the fruits list")
+
+# List Comprehension
+thisList = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+newlist = []
+# search item not include character 'a'
+for x in thisList:
+    if "a" not in x:
+        newlist.append(x)
+
+print("newlist: ")
+print(newlist)
+
+# Sort Lists
+thisList = [100, 50, 65, 82, 23]
+thisList.sort()
+print("Sort Lists")
+print(thisList)
+# Sort Descending
+print("Sort Descending")
+thisList.sort(reverse=True)
+print(thisList)
+
+# Customize Sort Function
+print("Customize Sort Function")
+
+
+def myFunc(n):
+    return abs(n - 50)
+
+
+thisList = [100, 50, 65, 82, 23]
+thisList.sort(key=myFunc)
+print(thisList)
+
+# Reverse Order
+thisList = ["banana", "Orange", "Kiwi", "cherry"]
+thisList.reverse()
+print("Reverse Order")
+print(thisList)
+
+#join list
+
