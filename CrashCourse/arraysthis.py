@@ -1,0 +1,18 @@
+thisArr = ["Vietnam", "China", "Japan", "US", "UK", "Russia", "France"]
+print("len of thisArr = " + str(len(thisArr)))
+print("first item is: " + str(thisArr[0]))
+print("last item is: " + str(thisArr[-1]))
+print("thisArr is: " + str(thisArr))
+print("append Laos to thisArr")
+thisArr.append("Laos")
+print(thisArr)
+print("Remove France from thisArr")
+thisArr.remove("France")
+print(thisArr)
+print("Remove UKKK not in thisArr")
+if "UKKK" in thisArr:
+    thisArr.remove("UKKK")
+print(thisArr)
+print("Delete first item of thisArr")
+thisArr.pop(0)
+print(thisArr)
