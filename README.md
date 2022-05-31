@@ -11,3 +11,5 @@ https://www.amazon.com/Python-Crash-Course-2nd-Edition/dp/1593279280
 
 Udemy Course:
 https://www.udemy.com/course/100-days-of-code/
+
+Completed!
