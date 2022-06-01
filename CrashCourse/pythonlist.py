@@ -72,5 +72,16 @@ thisList.reverse()
 print("Reverse Order")
 print(thisList)
 
-#join list
+# join list
 
+list1 = [1, 2, 3, 4, 5, 6]
+list2 = [7, 8, 9, 10]
+list3 = list1 + list2
+print(list3)
+
+for x in list2:
+    list1.append(x)
+print(list1)
+
+list1.extend(list2)
+print(list1)
